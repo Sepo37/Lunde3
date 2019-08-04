@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="da">
+    <head>
+        <title>Lunde</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css">
+        <link href="CSS/bilstyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav id="navigation-bar">
+            
+            <a href="https://lunde3.theravencsraft.com">
+                <div id="logo"></div>
+            </a>
+            
+            <a href="https://lunde3.theravencsraft.com">
+                <div class="nav-button" >Forsiden</div>
+            </a> 
+             
+            <a href="https://lunde3.theravencsraft.com/om_os.html">
+                <div class="nav-button" >Om os</div>
+            </a>
+            
+            <a href="https://lunde3.theravencsraft.com/udstilling.html">
+                <div class="nav-button">Udstilling</div>
+            </a>
+            
+            <a href="https://lunde3.theravencsraft.com/Billetter-single-page.html">
+                <div class="nav-button">Biletter</div>
+            </a>
+            
+            <a href="https://lunde3.theravencsraft.com/kontakt.html">
+                <div class="nav-button">Kontakt os</div>
+            </a>
+            
+        </nav>
+        <div id="nav-toggler" onclick="navToggle()"></div>
+        <h1>Købmandsgården, Lunde</h1>
+        <h2>Billetter</h2>
+        
+        <div class="contend-wrapper" id="stepOne">
+            <form class="form">
+                Fornavn:<br>
+                <input type="text" name="fornavn" placeholder="Fornavn">
+                <br><br>
+                Efternavn:<br>
+                <input type="text" name="efternavn" placeholder="Efternavn">
+                <br><br>
+                E-Mail:<br>
+                <input type="email" name="email" placeholder="E-Mail">
+                <br>
+            </form>
+            <form class="form">
+                <br>
+                Billettype <br>
+                <button type="button" class="addBtn" onclick="addTicketA()">Voksen</button>
+                <br>
+                <button type="button" class="addBtn" onclick="addTicketB()">Barn</button>
+                <br>
+                
+            </form>
+            <div class="next-button" onclick="ticketButton()">
+                Næste
+            </div>
+            <a href="https://lunde3.theravencsraft.com">
+                <div class="cancle">
+                    Afbryd
+                </div>
+            </a>
+        </div>
+        
+        <div class="contend-wrapper" id="stepTwo">
+            <form class="form">
+                Kortnummer:<br>
+                <input type="text" name="Kortnummer" placeholder="xxxx-xxxx-xxxx-xxxx">
+                <br><br>
+                Kontrolcifre:<br>
+                <input type="text" name="kontrolcifre" placeholder="xxx">
+                <br><br>
+                Udløbsår:<br>
+                <input type="text" name="Udløbsår" placeholder="Udløbsår">
+                <br><br>
+                 Udløbsmåned:<br>
+                <input type="text" name="Udløbsmåned" placeholder="Udløbsmåned">
+                <br><br>
+            </form>
+            <div class="next-button" onclick="ticketButton()">
+                Køb billet
+            </div>    
+            <a href="https://lunde3.theravencsraft.com">
+                <div class="cancle">
+                    Afbryd
+                </div>
+            </a>
+        </div>
+        
+        <div id="cart">
+            
+        </div>
+               
+        <script src="java/nav-toggle.js"></script>
+        <script src="java/billetter.js"></script>
+    </body>
+</html>

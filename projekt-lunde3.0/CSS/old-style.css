@@ -1,0 +1,133 @@
+body{
+    background-color: #121a49;
+    background-image: url(../img/pack-man-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial;
+    text-align: center;
+}
+
+@font-face{
+    font-family: pixle;
+    src: url(../Fonts/Minecrafter.Reg.ttf);
+}
+
+@font-face{
+    font-family: montserrat;
+    src: url(../Fonts/Montserrat-Regular.otf);    
+}
+
+#nav-toggler{
+    position: absolute;
+    height: 7%;
+    width: 3%;
+    background-image: url(../img/Hamburger_Menu.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+#navigation-bar{
+    display: none;
+    position: absolute;
+    height: 95%;
+    width: 25%;
+    background-color: #00b4ff;
+}
+#logo{
+    background-image: url(../img/Logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 20%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.nav-button{
+    height: 40px;
+    width: 85%;
+    padding-top: 10px;
+    background-color: #2ba0b9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    font-size: 25px;
+    font-family: montserrat;
+}
+
+h1{
+    color: #00b4ff;
+    font-size: 25px;
+    font-family: montserrat;
+}
+
+h2{
+    color: #ffc000;
+    text-shadow: -5px 5px #ff5400;
+    font-size: 105px;
+    font-family: pixle;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.slideshow{
+    width: 65%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.my-slides{
+}
+
+.slide{
+    height: 85%;
+    width: 50%;
+    border: solid;
+    border-color: #ffc000;
+}
+
+.next, .prev{
+    font-family: montserrat;
+    font-weight: bold;
+    color: #ffc000;
+    font-size: 50px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/*Phone styleing*/
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 15px;
+    }
+    
+    h2{
+        font-size: 45px;
+    }
+    
+    #nav-toggler{
+        height: 9%;
+        width: 10%;
+    }
+    
+    #navigation-bar{
+        height: 100%;
+        width: 100%;
+    }
+    #logo{
+        height: 20%;
+        width: 30%;
+    }
+
+    .nav-button{
+        height: 55px;
+        width: 85%;
+        padding-top: 15px;
+        font-size: 30px;
+    }
+  }
