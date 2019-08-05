@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <title>Lunde</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav id="navigation-bar">
+            
+            <a href="https://lunde2.theravencsraft.com">
+                <div id="logo"></div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com">
+                <div class="nav-button" >Forsiden</div>
+            </a> 
+             
+            <a href="https://lunde2.theravencsraft.com/om_os.html">
+                <div class="nav-button" >Om os</div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com/udstilling.html">
+                <div class="nav-button">Udstilling</div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com/Billetter1.html">
+                <div class="nav-button">Biletter</div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com/kontakt.html">
+                <div class="nav-button">Kontakt os</div>
+            </a>
+            
+        </nav>
+        <div id="nav-toggler" onclick="navToggle()"></div>
+        <h1>Udstillinger</h1>
+        <h2>Nu og Senere</h2>
+        
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Se andre udstillinger</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Nuværede</a>
+    <a href="#about">Næste</a>
+    <a href="#contact">Tidligere</a>
+  </div>
+</div>
+        
+        <div class="row">
+          <div class="column">
+            <img src="img/spillemaskiner.png" alt="spillemaskine" class="tumbnailes" >
+            <h3>Retro arkaden</h3>
+            <h4>April-Juni</h4>
+            <p>Lysene blinker, penge lægges i maskinen, pointene samles ind... SEJR! Oplev nostalgi i vores retro arkade udstilling. Den er fuld af de gode gamle spil såsom Pacman.</p>
+            </div>
+        
+            <div class="column">
+              <img src="img/teddy.jpg" alt="bamse" class="tumbnailes"> 
+              <h3>Da vi var smaa</h3>
+              <h4> Juni-September</h4>
+              <p>Dukke Lise siger god-dag og Bamsen Bim-se inviterer til et kram. Udstillingen er fuld af legetøj fra de gamle dage. Både børn og voksne er velkommen til at lege med!</p>             
+            </div>
+            
+             <div class="column">
+              <img src="img/masterpiece.png" alt="vr_spil" class="tumbnailes">
+              <h3>En anden virkelighed</h3>
+              <h4>September-December</h4>
+              <p>Dukke Lise siger god-dag og Bamsen Bim-se inviterer til et kram. Udstillingen er fuld af legetøj fra de gamle dage. Både børn og voksne er velkommen til at lege med!</p>
+              
+            </div>
+            </div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+        <script src="java/nav-toggle.js"></script>
+    </body>
+</html>

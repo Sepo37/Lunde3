@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <title>Lunde</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/style.css" rel="stylesheet" type="text/css">
+        <link href="CSS/bilstyle.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav id="navigation-bar">
+            
+            <a href="https://lunde2.theravencsraft.com">
+                <div id="logo"></div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com">
+                <div class="nav-button" >Forsiden</div>
+            </a> 
+             
+            <a href="https://lunde2.theravencsraft.com/om_os.html">
+                <div class="nav-button" >Om os</div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com/udstilling.html">
+                <div class="nav-button">Udstilling</div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com/Billetter1.html">
+                <div class="nav-button">Biletter</div>
+            </a>
+            
+            <a href="https://lunde2.theravencsraft.com/kontakt.html">
+                <div class="nav-button">Kontakt os</div>
+            </a>
+            
+        </nav>
+        <div id="nav-toggler" onclick="navToggle()"></div>
+        <h1>Købmandsgården, Lunde</h1>
+        <h2>Billetter</h2>
+        
+        <div id="contend-wrapper">
+            <form class="form">
+                Kortnummer:<br>
+                <input type="text" name="Kortnummer" placeholder="xxxx-xxxx-xxxx-xxxx">
+                <br><br>
+                Kontrolcifre:<br>
+                <input type="text" name="kontrolcifre" placeholder="xxx">
+                <br><br>
+                Udløbsår:<br>
+                <input type="text" name="Udløbsår" placeholder="Udløbsår">
+                <br><br>
+                 Udløbsmåned:<br>
+                <input type="text" name="Udløbsmåned" placeholder="Udløbsmåned">
+                <br><br>
+            </form>
+                <button id="myBtn">Køb billet</button>
+                        <div id="popup" class="popupBG">
+                            <div class="PUcontent">
+                                <span class="close">&times;</span>
+                                    <p style="font-size: 25px; font-family: montserrat;">
+                                        Er du sikker på at dine oplysninger er korrekte?
+                                    </p>
+    	                               <div>
+    		                              <p style="font-size: 25px; font-family: montserrat;"><a href="https://lunde2.theravencsraft.com/Billetter3.html">Ja</a></p>
+    	                               </div>
+                            </div>
+                        </div>
+                <a href="https://lunde2.theravencsraft.com">
+                    <div id="cancle">
+                        Afbryd
+                    </div>
+                </a>
+        </div>
+        
+        <img id="side-pic" src="img/spillemaskiner.png">
+            
+                            
+        
+        <script src="java/nav-toggle.js"></script>
+        <script src="java/billetter.js"></script>
+    </body>
+</html>
